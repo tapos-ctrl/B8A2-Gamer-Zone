@@ -1,22 +1,26 @@
+
 /* applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
     /* sheared styles start  */
     .primary-btn,
     .secondary-btn {
-        /* padding: 15px 40px; */
         width: 49%;
         margin: 25px 0px;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     /* sheared styles end  */
+    .header,.gamer,.videos,.download,.game-category,.footer-container,.banner {
+        padding: 0px 0px;
+    }
     .header-container,
     nav>ul,
-    .gamer-container  {
+    .gamer-container,
+    .videos ,
+    .download-container{
         flex-direction: column;
-        padding: 0px 20px;
-
+        padding: 20px 20px;
     }
 
     .banner{
@@ -30,7 +34,7 @@
 
     /* banner styles  */
     .banner-content,
-    .banner-image {
+    .banner-image{
         width: 100%;
 
     }
@@ -39,7 +43,7 @@
         margin-top: 40px;
     }
 
-    .banner-content {
+    .banner-content{
         width: 80%;
         margin: 100px auto;
     }
@@ -87,4 +91,100 @@
     }
     /* gamer styles end  */
 
+
+
+    /* videos styles start  */
+    .videos-container{
+        grid-template-columns: 1fr;
+    }
+    .video:hover.video::after {
+        content: "";
+        width: 100%;
+        height: 80%;
+        border-radius: 20px;
+        position: absolute;
+        top: 0%;
+        background: rgba(20, 15, 15, 0.71);
+        cursor: pointer;
+        transition: 1s;
+    }
+    .video>img {
+        width: 100%;
+        height: 80%;
+        z-index: -1;
+    }
+    /* videos styles end  */
+
+
+    /* download styles start  */
+    .download-content{
+        width: 100%;
+        text-align: center;
+    }
+    .download-img{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .doll-img-box {
+        bottom: -40px;
+        width: 50%;
+        left: -50px;
+    }
+    .download-description {
+        text-align: center;
+        font-size: 1rem;
+        line-height: 30px;
+        padding: 30px 0px;
+    }
+    .download-content {
+        width: 85%;
+        padding: 0px;
+    }
+    .download-title{
+        font-size: 2rem;
+    }
+    /* game category start  */
+    .game-category-container {
+        gap: 10px;
+    }
+    
+    .category{
+        width: 130px;
+    }
+    .category>a {
+        font-size: .5rem;
+        padding: 9px;
+        border-radius: 50px;
+    }
+    .category>a>img {
+        margin-right: 5px;
+        width: 30px;
+    }
+
+    /* footer styles start  */
+    .footer-link-box-one,.socials-icon-box{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px 0px;
+        padding: 0px;
+    }
+    .socials-icon-boxs{
+        margin-top: 100px;
+    }
+    .footer-link-box-one>li>a{
+        font-size: .8rem;
+    }
+    .footer-link-box-two{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 20px 0px;
+    }
+    .footer-link-box-two>a{
+        font-size: .8rem;
+    }
+    .footer{
+        padding-bottom: 50px;
+    }
+    /* footer styles end  */
+    
 }

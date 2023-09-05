@@ -1,0 +1,96 @@
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .header,.gamer,.videos,.download,.game-category,.footer-container,.banner {
+        padding: 0px 50px;
+    }
+    
+    .header-container {
+        align-items: center;
+    }
+
+    nav>ul>li>a {
+        font-size: .8rem;
+
+    }
+
+    .logo>a {
+        font-size: 2rem;
+    }
+
+
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .banner-content{
+        width: 70%;
+    }
+
+     .banner-image {
+        width: 100%;
+        text-align: center;
+    }
+.d-none{
+    display: none;
+}
+
+
+
+/* gamer styles  */
+
+.gamer-container,.download-container {
+    flex-direction: column;
+    align-items: center;
+}
+.gamer-content {
+    width: 100%;
+    text-align: center;
+}
+
+/* videos styles  */
+ .videos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 
+}
+.videos {
+    padding: 100px 50px;
+}
+.video:hover.video::after {
+    content: "";
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+    position: absolute;
+    top: 0%;
+    background: rgba(20, 15, 15, 0.71);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.download-content {
+    width: 70%;
+    text-align: right;
+    padding: 0% 5% 7% 10%;
+    align-self: center;
+}
+.download-img {
+    width: 55%;
+    position: relative;
+}
+
+.category {
+    width: 287px;
+}
+.footer-link-box-one,.socials-icon-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+
+}
