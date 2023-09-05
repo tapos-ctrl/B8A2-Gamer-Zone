@@ -1,57 +1,90 @@
 /* applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
     /* sheared styles start  */
-    .primay-btn ,.secondary-btn{
+    .primary-btn,
+    .secondary-btn {
         /* padding: 15px 40px; */
         width: 49%;
-        margin:25px 0px;
+        margin: 25px 0px;
         font-size: 1rem;
     }
-    
+
     /* sheared styles end  */
-    .header-container, 
-    nav>ul 
-    {
+    .header-container,
+    nav>ul,
+    .gamer-container  {
         flex-direction: column;
         padding: 0px 20px;
 
     }
+
     .banner{
         flex-direction: column-reverse;
         padding: 0px 20px;
     }
-    .logo>a{
+
+    .logo>a {
         justify-content: center;
     }
 
     /* banner styles  */
-    .banner-content,.banner-image{
+    .banner-content,
+    .banner-image {
         width: 100%;
-    
+
     }
-    .banner-content{
+
+    .banner-image {
+        margin-top: 40px;
+    }
+
+    .banner-content {
         width: 80%;
-        margin: 0 auto;
+        margin: 100px auto;
     }
-    .banner-title-one{
+
+    .banner-title-one {
         font-size: 2rem;
     }
-    .banner-title-two{
+
+    .banner-title-two {
         font-size: 4rem;
     }
+
     .banner-content>a {
         font-size: 1rem;
     }
+
     .fa-play,
-    
-    .fa-download ,
-    .fa-user-group{
+
+    .fa-download,
+    .fa-user-group {
         padding: 3px;
         font-size: .8rem;
     }
-    .btn-box{
+
+    .btn-box {
         width: 100%;
         text-align: center;
     }
+
+    /* header styles end  */
+    /* gamer styles start  */
+    .gamer-content {
+        text-align: center;
+        width: 100%;
+    }
+    .more-btn{
+        margin-top: 0px;
+        font-size: .8rem;
+    }
+    .gamer-description{
+        padding-bottom: 10px;
+    }
+    .gamer-content>h4 {
+        font-size: 1.25rem;
+    }
+    /* gamer styles end  */
 
 }
