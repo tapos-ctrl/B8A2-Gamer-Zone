@@ -10,7 +10,9 @@
 :root {
     --primary-text: #0B0223;
     --Linear: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
-    --red-color:#F61C0D
+    --red-color: #F61C0D;
+    --section-title-color-two: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    --gray: #534C64;
 }
 
 body {
@@ -25,17 +27,56 @@ section {
     margin: 0 auto;
 }
 
+.section-title-one {
+    color: var(--primary-text);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.section-title-two {
+    background: var(--section-title-color-two);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.primay-btn {
+    border-radius: 48px;
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+    padding: 13px 40px;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.secondary-btn {
+    border-radius: 48px;
+    background: #4EC5F7;
+    padding: 13px 40px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* common sheared styles end  */
 
 /* header styles start  */
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding: 38px;
+    padding: 38px 0px;
 
 }
-
-.logo {}
 
 .logo>a {
     display: flex;
@@ -71,13 +112,14 @@ nav>ul>li {
     list-style: none;
     padding: 16px;
 }
-nav>ul>:last-child{
+
+nav>ul>:last-child {
     background: rgba(11, 2, 35, 0.10);
     border-radius: 8px;
 }
+
 nav>ul>li>a {
     color: #3C354F;
-    text-align: center;
     font-size: 1.12rem;
     font-weight: 500;
     text-decoration: none;
@@ -91,4 +133,82 @@ nav>ul>li>a {
     background: transparent;
 }
 
+/* nav bar styles end  */
+/* banner styles start  */
+.banner {
+    display: flex;
+    align-items: center;
+}
+
+.banner-title-one {
+    text-transform: uppercase;
+}
+
+.banner-content,
+.banner-image {
+    width: 50%;
+
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+.banner-title-two {
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+.banner-content>a {
+    color: var(--gray);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.banner-content>a {
+    color: var(--gray);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.banner-content>a {
+    color: var(--gray);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 17px 0px;
+}
+
+.fa-play {
+    background: var(--Linear);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.25rem;
+    padding: 6px;
+    margin-right: 6px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-text);
+}
+
+.fa-download {
+    background: var(--Linear);
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 6px;
+    margin-right: 6px;
+    font-size: 1.25rem;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-user-group {
+    color: var(--primary-text);
+    padding: 6px;
+    margin-right: 6px;
+    font-size: 1.25rem;
+}
+.sing-in-btn{
+    margin: 40px 10px 0px 0px;
+}
+/* banner styles end  */
 /* header styles end  */
